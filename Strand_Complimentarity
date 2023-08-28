@@ -1,0 +1,33 @@
+
+
+dna_sequence= input("Input RNA Sequence Here:")
+output_string=("")
+
+    #map the different DNA building blocks (ATCG)
+
+    #purines
+adenine= ("A")
+guanine= ("G")
+
+    #pyrimidines
+cytosine= ("C")
+thymine= ("T")
+
+
+for nucleotide in dna_sequence:
+    if nucleotide in adenine:
+        output_string+= "T"
+    elif nucleotide in thymine:
+        output_string+= "A"
+    elif nucleotide in cytosine:
+        output_string += "G"
+    elif nucleotide in guanine:
+        output_string+= "C"
+    else:
+            raise ValueError("Incorrect DNA sequence was entered!")
+
+print("The Complimentary DNA sequence for " + dna_sequence + " is: ")
+print(output_string)
+
+
+
