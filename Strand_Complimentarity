@@ -1,6 +1,6 @@
 
 
-dna_sequence= input("Input RNA Sequence Here:")
+dna_sequence= input("Input DNA Sequence Here:")
 output_string=("")
 
     #map the different DNA building blocks (ATCG)
