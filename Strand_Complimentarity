@@ -5,13 +5,14 @@ output_string=("")
 
     #map the different DNA building blocks (ATCG)
 
-    #purines
-adenine= ("A")
-guanine= ("G")
+#purines
+  adenine= ("A","a")
+guanine= ("G", "g")
 
     #pyrimidines
-cytosine= ("C")
-thymine= ("T")
+cytosine= ("C", "c")
+thymine= ("T", "t")
+
 
 
 for nucleotide in dna_sequence:
