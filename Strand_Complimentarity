@@ -26,8 +26,28 @@ for nucleotide in dna_sequence:
         raise ValueError("Incorrect DNA sequence was entered!")
 
 print("The Complimentary DNA sequence for " + dna_sequence + " is: ")
-
 print((output_string))
+
+#CODE TO CALCULATE THE GC CONTENT%
+
+GC_num= 0
+
+for nucleotide in output_string:
+    if nucleotide in cytosine:
+        GC_num+= 1
+    elif nucleotide in guanine:
+        GC_num+= 1
+    elif nucleotide in thymine:
+        GC_num+= 0
+    elif nucleotide in adenine:
+        GC_num+= 0
+    else:
+        raise ValueError("GC content= 0%")
+
+GC_content= ((GC_num)/len(output_string))*100
+
+print("GC content = " + str(GC_content) + "%")
+
 
 # function to count the number of hydrogen bonds
 ##two hydrogen bonds for AT pairing and three hydrogen bonds for CG base pairing
@@ -59,4 +79,3 @@ if h_bond_prompt==("YES"):
 
 else:
     print("Code is Finished")
-
