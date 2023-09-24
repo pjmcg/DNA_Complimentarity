@@ -79,3 +79,9 @@ if h_bond_prompt==("YES"):
 
 else:
     print("Code is Finished")
+
+# line breaks
+print("")
+print("")
+
+esc= input("Press ENTER when complete ")
